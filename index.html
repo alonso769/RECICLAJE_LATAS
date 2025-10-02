@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto Animado por Scroll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+
+    <div id="product-display">
+        <img id="product-can" src="images/lata.png" alt="Lata de Chocolate">
+        <img id="tacho-img" src="images/tacho.png" alt="Contenedor de Reciclaje">
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="logo-text"><h1>LATATON</h1></div>
+
+    <section class="scroll-section" id="section-1">
+        <div class="section-1-content">
+            <h2>!DEMASIADAS LATAS EN EL MUNDO!</h2>
+            <p>Cada día, miles de millones de personas usan envases metálicos. En todo el mundo, se consumen más de 350 mil millones de latas de bebidas al año, una cifra que subraya el impacto masivo de este envase en nuestro planeta.</p>
+
+            <div class="collapsible-container">
+                <button class="collapsible-button" id="toggle-button">
+                    <span class="gear-icon">⚙️</span>
+                    <span>Descubre Más</span>
+                </button>
+                <div class="collapsible-content">
+                    <p>El consumo de latas de aluminio y acero es una de las estadísticas más impresionantes del mercado global de envases.
+
+Para ponerlo en perspectiva, se estima que la industria produce y vende más de un billón de latas al año a nivel mundial (considerando alimentos, bebidas, aerosoles, etc.). Solo en el segmento de bebidas, la cifra supera los 350 mil millones de latas consumidas anualmente.
+
+Esta cifra astronómica presenta un doble desafío y una gran oportunidad
+
+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="scroll-section" id="section-2">
+        <div class="info-collapsible info-left">
+            <button class="collapsible-button" id="toggle-info-left">
+                <span class="gear-icon info-gear">⚙️</span>
+                <span>¿DONDE BOTAR NUESTRAS LATAS?</span>
+            </button>
+            <div class="collapsible-content info-content-left">
+                <p>Las latas de aluminio y acero se depositan en el contenedor amarillo (o tacho de color amarillo), destinado a envases ligeros. Este es el color universalmente aceptado para este tipo de residuos en la mayoría de los sistemas de reciclaje.</p>
+            </div>
+        </div>
+
+        <div class="info-collapsible info-right">
+            <button class="collapsible-button" id="toggle-info-right">
+                <span class="gear-icon info-gear">⚙️</span>
+                <span>¿COMO HACER ESTO EN NUESTRAS CASAS?</span>
+            </button>
+            <div class="collapsible-content info-content-right">
+                <p>♻️Vacía y Enjuaga: Asegúrate de que la lata esté vacía y dale un enjuague rápido.</P>
+
+                <P>♻️Aplastala (Opcional): Aplasta la lata para ahorrar espacio.</P>
+
+<P>♻️Contenedor Amarillo: Deposítala siempre en el tacho amarillo de envases.</p>
+            </div>
+        </div>
+        
+        <h2>COMO RECICLAR LAS LATAS DE FORMA CORRECTA</h2>
+        <p>Descubre el ciclo de vida de nuestro envase y cómo contribuyes al planeta.</p>
+    </section>
+
+    <section class="scroll-section" id="section-3">
+        <h2>Tu Recarga Diaria</h2>
+        <p>Energía y sabor en un solo envase, diseñado para acompañarte todo el día.</p>
+
+        <div class="product-gallery">
+            <h3 class="gallery-title">Nuestras Latas Tienen una Segunda Vida</h3>
+            <div class="gallery-images">
+                <img src="images/macetero.png" alt="Lata Macetero" onclick="showRecyclingDetails('macetero')">
+                <img src="images/portalapices.png" alt="Lata Portalápices" onclick="showRecyclingDetails('portalapices')">
+                <img src="images/linterna.png" alt="Lata Linterna" onclick="showRecyclingDetails('linterna')">
+            </div>
+            <p class="gallery-callout">Haz clic en una imagen para ver los pasos y el video tutorial en la sección inferior.</p>
+        </div>
+        
+        </section>
+
+    <section class="scroll-section" id="section-4">
+        <h2>Da Vida a Tu Lata ♻️</h2>
+        <p>Selecciona tu proyecto favorito para ver los pasos detallados y la guía en video.</p>
+
+        <div class="recycling-carousel">
+            <div class="recycling-details-container">
+
+                <div class="recycling-card" id="details-macetero">
+                    <h3>Macetero Decorativo</h3>
+                    <div class="can-buttons-container">
+                        <button class="can-button" data-target="#pasos-macetero"><span>Pasos</span></button>
+                        <button class="can-button" data-target="#video-macetero"><span>Video Guía</span></button>
+                    </div>
+                    <div class="can-collapsible-content" id="pasos-macetero"><p>1. Limpia y seca bien la lata. 2. Haz 3 agujeros en la base para drenaje. 3. Pinta y decora a tu gusto. 4. Rellena con tierra y planta una suculenta.</p></div>
+                    <div class="can-collapsible-content video-content" id="video-macetero"><iframe width="100%" height="200px" src="https://www.youtube.com/embed/ejemplo-macetero" frameborder="0" allowfullscreen></iframe></div>
+                </div>
+                
+                <div class="recycling-card hidden-card" id="details-portalapices">
+                    <h3>Portalápices</h3>
+                    <div class="can-buttons-container">
+                        <button class="can-button" data-target="#pasos-portalapices"><span>Pasos</span></button>
+                        <button class="can-button" data-target="#video-portalapices"><span>Video Guía</span></button>
+                    </div>
+                    <div class="can-collapsible-content" id="pasos-portalapices"><p>1. Corta la parte superior con tijeras de hojalata seguras. 2. Pega tela o papel decorativo alrededor. 3. Coloca un borde suave para evitar cortes.</p></div>
+                    <div class="can-collapsible-content video-content" id="video-portalapices"><iframe width="100%" height="200px" src="https://www.youtube.com/embed/ejemplo-portalapices" frameborder="0" allowfullscreen></iframe></div>
+                </div>
+
+                <div class="recycling-card hidden-card" id="details-linterna">
+                    <h3>Linterna / Porta-Velas</h3>
+                    <div class="can-buttons-container">
+                        <button class="can-button" data-target="#pasos-linterna"><span>Pasos</span></button>
+                        <button class="can-button" data-target="#video-linterna"><span>Video Guía</span></button>
+                    </div>
+                    <div class="can-collapsible-content" id="pasos-linterna"><p>1. Llena la lata con agua y congélala. 2. Perfora un patrón usando un clavo y un martillo. 3. Descongela, seca y coloca una vela LED.</p></div>
+                    <div class="can-collapsible-content video-content" id="video-linterna"><iframe width="100%" height="200px" src="https://www.youtube.com/embed/ejemplo-linterna" frameborder="0" allowfullscreen></iframe></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <div style="height: 50vh;"></div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
